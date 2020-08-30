@@ -1,0 +1,164 @@
+main {
+
+    .container {
+
+        padding: 100px 25% 0;
+
+        text-align: center;
+        font-size: 22px;
+
+        h2 {
+
+            margin-bottom: 25px;
+            font-size: 36px;
+        }
+
+        .guide-pdf {
+
+            margin: 50px 0 0;
+
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+
+                    text-decoration: underline;
+                }
+            }
+
+            .fa-book {
+
+                padding: 7px;
+                margin-right: 10px;
+
+                border-radius: 50%;
+                border: solid 1px #ccc;
+
+                color: #8a8a8a;
+            }
+        }
+
+        img.big {
+
+            display: block;
+
+            margin: 75px auto 0;
+
+            width: 1000px;
+        }
+    }
+
+    .container#first {
+        background-image: url('imgs/container_bg1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: #fff;
+    }
+
+    .container#second {
+
+        padding-bottom: 50px;
+    }
+
+    .container.third {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        background-color: #222222;
+        color: #fff;
+
+        img {
+            width: 750px;
+        }
+    }
+
+    .box {
+
+        padding: $padding_default;
+
+        display: flex;
+        align-items: center;
+
+        h3 {
+
+            margin-bottom: 25px;
+        }
+
+        .descr {
+
+            padding: 50px 50px;
+
+            width: 45%;
+
+            text-align: left;
+        }
+    }
+
+    .container.tools-effects {
+
+        padding: 100px 15%;
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+
+            padding-top: 50px;
+
+            .card {
+
+                position: relative;
+
+                img {
+                    width: 95%;
+                }
+
+                span {
+                    position: absolute;
+                    bottom: 5%;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    color: #fff;
+
+                    z-index: 9;
+                }
+            }
+        }
+    }
+
+    .container.brushpack {
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 130px 22%;
+
+        background-image: url('imgs/brushpacks-bg.jpg');
+
+        .card {
+
+            width: 48%;
+
+            padding: 100px 25px;
+            background-color: #fff;
+        }
+    }
+
+    .bg-1 {
+
+        @include bg-fixed;
+
+        background-image: url('imgs/bg-01.jpg');
+    }
+
+    .bg-2 {
+
+        @include bg-fixed;
+
+        background-image: url('imgs/bg-02.jpg');
+    }
+}

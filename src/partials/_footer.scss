@@ -1,0 +1,50 @@
+footer {
+
+    .menu {
+        padding: $padding_default;
+        padding-top: 75px;
+        padding-bottom: 75px;
+
+        background-color: #ececec;
+
+        &:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .col-4 {
+
+            width: 25%;
+            float: left;
+        }
+
+        ul {
+            margin-top: 15px;
+            list-style: none;
+
+            li {
+
+                margin: 7px 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            color: #8e8a8a;
+
+            &:hover {
+
+                text-decoration: underline;
+
+                color: #6b6969;
+            }
+        }
+    }
+
+    .credits {
+        height: 100px;
+        background-color: #1e1e1e;
+    }
+}

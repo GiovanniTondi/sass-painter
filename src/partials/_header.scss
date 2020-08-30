@@ -4,7 +4,7 @@ header {
 
         width: 100%;
 
-        padding: 0 15%;
+        padding: $padding_default;
 
         background-color: black;
 
@@ -81,16 +81,14 @@ header {
         }
     }
 
-
     .jumbo {
         display: flex;
         justify-content: flex-end;
 
-        padding: 0 15%;
+        padding: $padding_default;
 
         background-image: url('imgs/jumbo.jpg');
         background-position: top;
-
 
         .download {
 
@@ -128,7 +126,6 @@ header {
                 background-color: rgba(72,73,74,.7);
                 color: #fff;
             }
-
         }
 
         .buy-container {
@@ -167,10 +164,38 @@ header {
                     right: 10px;
                 }
             }
-
         }
     }
 
+    .nav-fixed {
 
+        padding: $padding_default;
 
+        background-color: #e6e6e6;
+
+        ul {
+
+            list-style: none;
+
+            li {
+                padding: 20px 15px;
+
+                display: inline-block;
+
+                a {
+                    padding: 20px 15px;
+
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #8e8a8a;
+
+                    &:hover {
+
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
