@@ -3,7 +3,7 @@ footer {
     .menu {
         padding: $padding_default;
         padding-top: 75px;
-        padding-bottom: 75px;
+        padding-bottom: 20px;
 
         background-color: #ececec;
 
@@ -41,10 +41,81 @@ footer {
                 color: #6b6969;
             }
         }
+
+        .social {
+
+            margin-top: 25px;
+
+            a {
+
+                margin-right: 5px;
+
+                font-size: 40px;
+
+                .fa-facebook-square {
+                    color: #3b5998;
+                }
+
+                .fa-twitter-square {
+                    color: #3b5998;
+                }
+
+                .fa-youtube-square {
+                    color: #CD201F;
+                }
+
+                .fa-pinterest-square {
+                    color: #BD081C;
+                }
+
+                .fa-rss-square {
+                    color: #ff8d00;
+                }
+            }
+        }
     }
 
     .credits {
+        padding: $padding_default;
         height: 100px;
+
         background-color: #1e1e1e;
+        color: #fff;
+
+        img {
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+
+        ul {
+            margin-top: 30px;
+            width: 65%;
+
+            float: right;
+            list-style: none;
+
+            font-size: 14px;
+            text-align: right;
+
+            li {
+
+                display: inline-block;
+
+                margin-left: 25px;
+
+                a {
+                    text-decoration: none;
+
+                    color: #837f7f;
+
+                    &:hover {
+
+                        color: #fff;
+
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
     }
 }

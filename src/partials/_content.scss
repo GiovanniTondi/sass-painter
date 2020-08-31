@@ -112,8 +112,12 @@ main {
 
                 position: relative;
 
+                transform: scale(95%);
+                overflow: hidden;
+
                 img {
-                    width: 95%;
+
+                    width: 100%;
                 }
 
                 span {
@@ -125,6 +129,13 @@ main {
                     color: #fff;
 
                     z-index: 9;
+                }
+
+                &:hover img {
+
+                    transform: scale(110%);
+
+                    transition: 1s;
                 }
             }
         }
